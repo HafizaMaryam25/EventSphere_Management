@@ -1,0 +1,1 @@
+const mongoose=require('mongoose'); require('dotenv').config(); mongoose.connect(process.env.MONGO_URL).then(() => console.log('DB_OK')) ; process.exit(0).catch((e)= console.error('DB_ERR:' + e.message)); process.exit(1);;  
